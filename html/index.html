@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookInfo Sample</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #4facfe, #00f2fe);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+    .container {
+      max-width: 850px;
+      margin: 3rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+      color: #007acc;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #444;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .error {
+      background: #ffe3e3;
+      color: #c00;
+      padding: 1rem;
+      border-left: 5px solid #c00;
+      margin-top: 1rem;
+      border-radius: 6px;
+    }
+    .review {
+      background: #f0faff;
+      padding: 1rem;
+      border-left: 4px solid #00bcd4;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+    .review small {
+      display: block;
+      margin-top: 0.5rem;
+      color: #666;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 BookInfo Sample</h1>
+
+    <h2>The Comedy of Errors</h2>
+    <p>
+      <strong>Summary:</strong>
+      <a href="https://en.wikipedia.org/wiki/The_Comedy_of_Errors" target="_blank">
+        Wikipedia Summary
+      </a> –
+      The Comedy of Errors is one of <strong>William Shakespeare’s</strong> early plays. It is his shortest and one of his most farcical comedies, with slapstick and mistaken identity.
+    </p>
+
+    <div class="error">
+      ⚠️ Error fetching product details!<br />
+      Sorry, product details are currently unavailable for this book.
+    </div>
+
+    <h2>Book Reviews</h2>
+
+    <div class="review">
+      <p>“An extremely entertaining play by Shakespeare. The slapstick humour is refreshing!”</p>
+      <small>— Reviewer1</small>
+    </div>
+
+    <div class="review">
+      <p>“Absolutely fun and entertaining. The play lacks thematic depth when compared to other plays by Shakespeare.”</p>
+      <small>— Reviewer2</small>
+    </div>
+
+    <div class="footer">
+      Reviews served by: <code>reviews-v3</code> <br>
+      Página mejorada visualmente ✨
+    </div>
+  </div>
+</body>
+</html>
