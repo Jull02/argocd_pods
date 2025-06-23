@@ -1,12 +1,17 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: myfirstpod
-  labels:
-    app: web
 spec:
-  containers:
-    - name: myfirstcontainer
-      image: nginx
-      ports:
-        - containerPort: 80
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myfirstpod
+  template:
+    metadata:
+      labels:
+        app: myfirstpod
+    spec:
+      containers:
+        - name: mycontainer
+          image: nginx
